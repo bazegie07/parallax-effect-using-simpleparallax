@@ -17,7 +17,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-4 img one">
-                <img src="/images/01.jpg" class-"ione" alt="">
+                <img src="/images/01.jpg" class="ione" alt="">
             </div>
             <div class="col-lg-3 txt text-1">
                 <h1>whitespace is like air.</h1>
@@ -72,9 +72,40 @@
         </div>
     </div>
     <script type="text/javascript">
+
         var image = document.getElementsByClassName('ione');
         new simpleParallax(image, {
-            scale: 1.8
+            scale: 1.6,
+            
+        });
+
+        var image = document.getElementsByClassName('itwo');
+        new simpleParallax(image, {
+            scale: 1.6,
+            orientation: 'left'
+        });
+
+        var image = document.getElementsByClassName('ithree');
+        new simpleParallax(image, {
+            scale: 1.6,
+            orientation: 'right'
+        });
+
+        var image = document.getElementsByClassName('ifour');
+        new simpleParallax(image, {
+            scale: 1.6,
+        });
+
+        var image = document.getElementsByClassName('ifive');
+        new simpleParallax(image, {
+            scale: 1.6,
+            orientation: 'right'
+        });
+
+        var image = document.getElementsByClassName('isix');
+        new simpleParallax(image, {
+            scale: 1.6,
+            orientation: 'left'
         });
     </script>
 
